@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Login app no sql
 
-## Getting Started
+## Purpose
 
-First, run the development server:
+- The purpose of this project is to practice Next.js and nosql.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- This project is a simple login/registration app.
+- The backend is hosted on mongodb and frontend on vercel.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+### Home page
+- A login button to direct user to login page.
+- If user is logged in this page is not accessible.
+### Login page
+- Allows user to login using email and password.There is a registration button at the button of the form for new user.
+- This button will direct user to registration page.
+- If user is logged in this page is not accessible.
+### Registration page
+- A user can register by putting in first name,last name, email,password, and password again.
+- Once registered, the user will be redirected to the home page.
+- If user is logged in this page is not accessible.
+### Dashboard Page
+- Once logged in the user will be redirected to this page.
+- The page will display users first name,lastname and email.
+- There is a logout button. This button will logout and redirect user to the login page.
+- This page is authenticated(only users that are loged in can access it).
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+URL: https://login-nosql-1m8bv9fj2-franf91.vercel.app/login
