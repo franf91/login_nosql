@@ -21,7 +21,7 @@ export default function Login() {
 	const router = useRouter();
 
 	if (status === "authenticated") {
-		redirect("/dashboard");
+		router.push("/dashboard");
 	}
 
 	const handleEmailInput = (e) => {
