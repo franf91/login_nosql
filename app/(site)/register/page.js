@@ -9,10 +9,6 @@ import { redirect } from "next/navigation";
 export default function Register() {
 	const { data: session, status } = useSession();
 
-	if (status === "authenticated") {
-		redirect("/dashboard");
-	}
-
 	const [user, setUser] = useState({
 		fName: "",
 		lName: "",
@@ -24,6 +20,10 @@ export default function Register() {
 	const [error, setError] = useState("");
 
 	const router = useRouter();
+
+	if (status === "authenticated") {
+		redirect("/dashboard");
+	}
 
 	const handleFirstNameInput = (e) => {
 		setUser({ ...user, fName: e.target.value });
