@@ -49,7 +49,7 @@ export default function Login() {
 				setError("Invalid Credentials");
 				return;
 			}
-			router.replace("/dashboard");
+			router.push("/dashboard");
 		} catch (error) {
 			console.log(error);
 		}
